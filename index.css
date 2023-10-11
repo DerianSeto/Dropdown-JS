@@ -63,3 +63,8 @@ body{
 		
 		z-index: 0; /* Visual priority | Lower than header */
 	}
+	
+	#ReadBtn{
+		position: absolute;
+		bottom: 0px;
+	}
