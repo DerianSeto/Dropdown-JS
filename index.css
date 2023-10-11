@@ -1,0 +1,65 @@
+/* It's ugly, but it works */
+
+body{
+	background-color: #0064FD;
+	font-family: "Gill Sans", sans-serif;
+}
+
+	header{
+		width: 100%;
+		position: absolute;
+		
+		z-index: 1; /* Visual priority | Higher than content */
+	}
+
+		#TitleImage{
+			background-color: #6100A4;
+		}
+
+			#Title{
+				background-color: #36FF00;
+				width: 80%;
+				padding: 20px 0px 20px 0px; /* Space from the border | Top, right, bottom, left */
+				text-align: center;
+				float: right;
+				
+				font-size: 34px;/* H1 size */
+				border-radius: 0px 25px 25px 0px; /*Rounded corners | Top left, right, bottom right, left*/
+			}
+
+			#TitleImage button{
+				float: left;
+				width: 20%;
+				padding: 20px 0px 20px 0px; /* Space from the border | Top, right, bottom, left */
+				border: none;
+				
+				font-size: 34px;/* H1 size */
+				border-radius: 25px 0px 0px 0px; /* Rounded corners | Top left, top right, bottom right, bottom left */
+			}
+		
+			#TitleImage button:disabled{
+				background-color: gray; /* Sets look of button while disabled */
+			}
+
+		#Drop{
+			background-color: #00FDB0;
+			text-align: center;
+			width: 20%;
+			
+			height: 0px; /* Initialize */
+			clear: both; /* Clears objects floating both left and right (Title and button) */
+			border-radius: 0px 0px 25px 25px; /*Rounded corners | Top left, right, bottom right, left*/
+			overflow: clip; /* Same as hidden, but allows space outside the div*/
+		}
+		
+			#Drop ul{
+				text-align: left;
+				float: left;
+			}
+		
+	main{
+		position: absolute;
+		top: 100px;
+		
+		z-index: 0; /* Visual priority | Lower than header */
+	}
