@@ -37,7 +37,7 @@ body{
 				border-radius: 25px 0px 0px 0px; /* Rounded corners | Top left, top right, bottom right, bottom left */
 			}
 		
-			#TitleImage button:disabled{
+			#TitleImage button:disabled{											/*Optional | Must add disabling to javascript*/
 				background-color: gray; /* Sets look of button while disabled */
 			}
 
@@ -66,5 +66,5 @@ body{
 	
 	#ReadBtn{
 		position: absolute;
-		bottom: 0px;
+		bottom:0px;
 	}
